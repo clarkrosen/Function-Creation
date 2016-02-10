@@ -37,7 +37,7 @@ function draw() {
   	stroke(0,0,0);
   	ellipse(270, 170, 100, 100);
   	
-  	 if(isOutOfBounds(x1, y1) == true) {
+  	 if(Out(x1, y1) == true) {
       //x1 = random(width);
       //y1 = random(height);
     x1Direction = x1Direction * -1;
@@ -45,7 +45,7 @@ function draw() {
     
   }
   
-    	 if(isOutOfBounds(x2, y2) == true) {
+    	 if(Out(x2, y2) == true) {
     //x2 = random(width);
     //y2 = random(height);
         x2Direction = x2Direction * -1;
@@ -73,7 +73,7 @@ function draw() {
     
 }
 
-function isOutOfBounds(xPosition, yPosition) {
+function Out(xPosition, yPosition) {
   if (xPosition > windowWidth || xPosition < 0) {
     return true;
   }
